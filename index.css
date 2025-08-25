@@ -202,7 +202,7 @@
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 50px;
-    border: 10px solid black;
+    border: 3px solid black;
     
 }
 
@@ -404,12 +404,14 @@ input::placeholder{
     color: #FFFF88;
 }
 
-.header-height-decrease{
+.header-shrink{
     height: 10px;
+    transition: height 2s ease;
 }
 
-.header-height-increase{
+.header-expand{
     height: 100px;
+    transition: height 4s ease;
 }
 
 .shrink-in-transition{
@@ -426,6 +428,6 @@ input::placeholder{
     overflow: hidden;
     
 }
-.mypage-footer-footer-hide{
+.mypage-footer-content-hide{
     display: none;
 }
