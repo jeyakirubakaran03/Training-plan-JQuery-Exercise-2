@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY Exercise 2</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--=================================
+            Header section
+            ================================= -->
+        <div id="mypage-header">
+            <nav class="mypage-header-nav theme-element">
+                <h1 id="header-name">Jeya Kirubakaran G</h1>
+            </nav>
+            
+        </div>
+
+        <!--=================================
+            center section
+            ================================= -->
+
+        <div id="mypage-center">
+            <div id= "mypage-leftnav">
+                <aside class="leftnav theme-element">
+                    <h3>Career Objective</h3>
+                </aside>
+                <aside class="leftnav theme-element">
+                    <h3>Education</h3>
+                </aside>
+                <aside class="leftnav theme-element">
+                    <h3>Work Experience</h3>
+                </aside>
+                <aside class="leftnav theme-element">
+                    <h3>Projects</h3>
+                </aside>
+                <div id="reference" class="jquery-reference-hidden">
+                    <aside class="leftnav theme-element">
+                        <h3>References</h3>
+                    </aside>
+                </div>
+            </div>
+
+        <!--=================================
+            main page content
+            ================================= -->
+
+            <div id="mypage-center-content">
+                <main >
+                    <section class="center-content theme-element">
+                        <h3 class="responsive-heading theme-element">Career Objective</h3>
+                        <p id="objective">
+                            To secure a challenging and responsible position where I can leverage 
+                            my skills and knowledge to contribute effectively to the organization's 
+                            success, while fostering my personal and professional growth.
+                        </p>
+                    </section>
+                    <section class="center-content theme-element">
+                        <h3 class="responsive-heading theme-element">Education</h3>
+                        <ul class="list">
+                            <li><span class="section-heading theme-element">Master of Computer Applications - </span> <span class="section-content theme-element">(2023-2025)</span></li>
+                            <li><span class="section-heading theme-element">B.Sc(Computer Science) - </span><span class="section-content theme-element">(2020-2023)</span></li>
+                            <li><span class="section-heading theme-element">H.SC - </span> <span class="section-content theme-element">(2019-2020)</span></li>
+                            <li><span class="section-heading theme-element">S.S.L.C - </span> <span class="section-content theme-element">(2017-2018)</span></li>
+                        </ul>
+                    </section>
+                    <section class="center-content theme-element">
+                        <h3 class="responsive-heading theme-element">Work Experience</h3>
+                        <ul class="list">
+                            <li>
+                               <span class="section-heading theme-element">Back-end Developer Intern </span> <span class="section-content theme-element">at Cloudnix - (2025-present)</span>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="center-content theme-element">
+                        <h3 class="responsive-heading theme-element">Projects</h3>
+                        <ul class="projects">
+                            <li>
+                                <span class="project-title theme-element">File Uploader Website</span>
+                                <span class="project-tech theme-element">Technologies Used: </span>
+                                <span class="project-tech-name theme-element">HTML, CSS, MySQL, PHP</span>
+                            </li>
+                            <li>
+                                <span class="project-title theme-element">Student Management System</span>
+                                <span class="project-tech theme-element">Technologies Used: </span>
+                                <span class="project-tech-name theme-element">Java Swing, JDBC, MS Access</span>
+                            </li>
+                            <li>
+                                <span class="project-title theme-element">Mobile App: Parkinson Disease Diagnosis</span>
+                                <span class="project-tech theme-element">Technologies Used: </span>
+                                <span class="project-tech-name theme-element">ML Models, Android Studio</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <div id="reference-section" class="jquery-reference-hidden">
+                        <section class="center-content theme-element">
+                            <h3 class="responsive-heading theme-element">Reference</h3>
+                            <ul class="list">
+                                <li>
+                                    <span class="section-heading theme-element">Name:</span> <span class="section-content theme-element">Shanmugavadivu</span>
+                                </li>
+                                <li>
+                                    <span class="section-heading theme-element">Designation: </span> <span class="section-content theme-element">Manager</span>
+                                </li>
+                                <li>
+                                    <span class="section-heading theme-element">Email ID: </span> <span class="section-content theme-element">psvadivu@gmail.com</span>
+                                </li>
+                                <li>
+                                    <span class="section-heading theme-element">Phone: </span> <span class="section-content theme-element">9865431000</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </main>
+            </div>
+
+        </div>
+
+        <!--=================================
+            footer section
+            ================================= -->
+
+        <div id="mypage-footer" class="mypage-footer theme-element">
+            <div class="mypage-footer-footer theme-element">
+                <h3>Contact Info</h3>
+                <p class="label">Phone: <a id="footer-phone" class="mypage-footer-a theme-element" href="tel:6369688413">6369688413</a></p>
+                <p class="label">E-mail: <a class="mypage-footer-a theme-element" href="mailto:jeyakirubakaran03@gmail.com">jeyakirubakaran03@gmail.com</a> </p>
+            </div>
+        </div>
+        
+        <!-- JAVASCRIPT -->
+
+        <!--=================================
+            Find max number
+            ================================= -->
+
+        <div class="js-wrapper theme-element">
+            <div class="js-container theme-element">
+                <h3 class="js-heading theme-element">Find Max Number</h3>
+                <form id="max" class="form">
+                    <div class="form-group">    
+                        <label for="num1">Number 1: </label>
+                        <input type="number" id="num1" class="js-input-field-border" placeholder="Enter first number">
+                    </div>
+                    <div class="form-group">
+                        <label for="num2">Number 2: </label>
+                        <input type="number" id="num2" class="js-input-field-border" placeholder="Enter second number">
+                    </div>
+                    <button type="submit" class="submit-button theme-element">Find Max</button>
+                    <div id="error-max" class="error"></div>
+                    <div id="result-max" class="result"> </div>
+                </form>
+            </div>
+        </div>
+
+        <!--=================================
+            reverse the string
+            ================================= -->
+
+        <div class="js-wrapper theme-element">
+            <div class="js-container theme-element">
+                <h3 class="js-heading theme-element">String Reverse</h3>
+                <form id="reverse" class="form">
+                    <div class="form-group">
+                        <label for="str">Enter String: </label>
+                        <input type="text" id="str" class="js-input-field-border" placeholder="Enter the string">
+                    </div>
+                    <button type="submit" class="submit-button theme-element">Reverse</button>
+                    <div id="error-rev" class="error"></div>
+                    <div id="result-rev" class="result"></div>
+                </form>
+            </div>    
+        </div>
+
+        <!--=================================
+            Find Largest Word
+            ================================= -->
+
+        <div class="js-wrapper theme-element">
+            <div class="js-container theme-element">
+                <h3 class="js-heading theme-element">Find Largest Word</h3>
+                <form id="find-largest-word" class="form">
+                    <div class="form-group">
+                        <label for="word">Enter Words: </label>
+                        <input type="text" id="word" class="js-input-field-border" placeholder="Red, Green, Blue">
+                    </div>
+                    <button type="submit" class="submit-button theme-element">Check</button>
+                    <div id="error-longest-word" class="error"></div>
+                    <div id="result-longest-word" class="result"></div>
+                </form>
+            </div>
+        </div>
+
+        <!--=================================
+            Cookies
+            ================================= -->
+            
+        <div class="js-wrapper theme-element">
+            <div class="js-container theme-element">
+                <h3 class="js-heading theme-element">Cookies</h3>
+                <form id="cookies" class="form">
+                    <div class="form-group" >
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="js-input-field-border" placeholder="Enter the Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phonenum" class="js-input-field-border" placeholder="Enter Phone Number">
+                    </div>
+                    <button type="submit" id="submit" class="submit-button theme-element">Submit</button>
+                    <div id="error-cookies" class="error"></div>
+                    <div id="result-cookies" class="result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+</body>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" 
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="script1.js"></script>
+<script type="text/javascript" src="script2.js"></script>
+</html>

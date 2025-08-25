@@ -1,0 +1,431 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;600&family=Oswald:wght@400;500&family=Poppins:wght@400;600&display=swap');
+
+/* =================================
+   section: Global reset
+   ================================= */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+
+#wrapper{
+    max-width: 1200px;
+    margin: auto;
+    padding:20px 20px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+/* =================================
+   section: Header style
+   ================================= */
+#mypage-header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* margin-top: 1px; */
+    
+}
+
+.mypage-header-nav{
+    background-color: #D98324;
+    border: 3px solid #4B2E05;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F8F8;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    /* margin-top: 1px; */
+    /* padding: 35px 20px 35px 20px; */
+    /* border-radius: 10px; */
+}
+#mypage-header h1{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* =================================
+   section: Center page style
+   ================================= */
+
+#mypage-center{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+}
+
+/* =================================
+   section: Left navigation style
+   ================================= */
+
+#mypage-leftnav{
+    width:30%;
+   
+}
+
+.leftnav{
+    border:2px solid black;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #FFD09B;
+    border-radius: 10px;
+    color: #4B2E05;
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+}
+
+
+/* ===================================
+   section: center content page style
+   =================================== */
+
+#mypage-center-content{
+    padding-right: 30px;
+    width: 70%;
+}
+
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    max-height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFF8E8;
+
+}
+
+.center-content{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#objective{
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    padding: 8px 0;
+    font-size: 1.1rem;
+    gap: 5px;
+}
+
+.section-content{
+    color: #7FBCD2;
+    font-style: italic;
+    flex: 1;
+    min-width: 150px;
+}
+
+.section-heading{
+    font-weight: bold;
+    color:#1B3C53;
+   
+    flex-shrink: 0;
+    margin-left: 0;
+    
+
+}
+
+.projects{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects li{
+    border-radius: 10px;
+    padding: 5px 0px 10px 0px;
+    margin-bottom: 5px;
+}
+
+.project-title{
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1B3C53;
+    margin-bottom: 5px;
+}
+
+.project-tech{
+    font-weight: bold;
+    color: #34699A;
+    flex-shrink: 0;
+    margin-left: 0;
+
+}
+.project-tech-name{
+    font-style: italic;
+    color: #7FBCD2;
+    flex: 1;
+    min-width: 150px;
+}
+
+
+/* =================================
+   section: Footer style
+   ================================= */
+
+.mypage-footer{
+    background-color: #FFA725;
+    color: #F8F8F8;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border: 10px solid black;
+    
+}
+
+#mypage-footer h3{
+    margin-bottom: 10px;
+}
+
+.label, .phone{
+    font-weight: bold;
+    margin: 5px 0;
+}
+.mypage-footer-a{
+    text-decoration: none;  
+    color: #FFFDF6; 
+    font-weight: lighter;
+}
+
+.responsive-heading{
+    display: none;
+}
+.jquery-reference-hidden{
+    display: none;
+}
+
+/* =================================
+   section: Responsive page style
+   ================================= */
+
+@media (max-width: 768px) {
+    
+    #mypage-center{
+        flex-direction: column;
+
+    }
+
+    #mypage-leftnav{
+        display: none;
+    }
+
+    #mypage-center-content{
+        width: 100%;
+        padding: 0px;
+    }
+    #mypage-center-content main{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    #mypage-center-content section{
+        min-height: 250px;
+        max-height: 400px;
+    }
+
+    .responsive-heading{
+        display: block;
+        text-transform: uppercase;
+        background-color: #FFD09B;
+        color: #4B2E05;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+}
+/* ===================================
+   section: JavaScript style
+   =================================== */
+
+
+.js-wrapper{
+    
+    max-width: 600px;
+    background-color: #FFF8E8;;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.js-container{
+    width: 100%;
+}
+
+.js-heading{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #4B2E05;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.form-group label{
+    margin-bottom: 5px;
+    margin-right: 15px;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px 8px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    width: 220px;
+    
+}
+.js-input-field-border{
+    border: 2px solid black;
+}
+
+input::placeholder{
+    color: black;
+    text-align: center;
+    opacity: 0.5;
+    
+}
+
+.submit-button{
+    font-family: 'Poppins',sans-serif;
+    padding: 10px 8px;
+    border-radius: 10px;
+    background-color: #D98324;
+    color: aliceblue;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    width: 220px;
+    margin-top: 15px;
+}
+/* .submit-button:hover{
+    background-color: #384B70;
+} */
+
+.result{
+    margin-top: 15px;
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+    max-width: 300px;
+    color: green;
+}
+
+.error{
+    margin-top: 15px;
+    font-size: 1rem;
+    letter-spacing: 1.1px;
+    color: red;
+}
+
+
+/* Javascript */
+
+
+
+/* *******************JQUERY CSS****************** */
+
+.bg-color{
+    background-color: #FFFF88;
+}
+
+.table-border-color{
+    border-color: #FF1A00;
+}
+
+.input-border{
+    border: none;
+}
+.text-color{
+    color: #CC0000;
+}
+
+.button-color{
+    background-color: #FF1A00;
+    color: #FFFF88;
+}
+
+.header-height-decrease{
+    height: 10px;
+}
+
+.header-height-increase{
+    height: 100px;
+}
+
+.shrink-in-transition{
+    transition: height 2s ease;
+}
+
+.shrink-out-transition{
+    transition: height 4s ease;
+}
+
+.adding-footer-border{
+    border: 2px solid #FF1A00;
+    background-color: "#FFFF88";
+    overflow: hidden;
+    
+}
+.mypage-footer-footer-hide{
+    display: none;
+}
