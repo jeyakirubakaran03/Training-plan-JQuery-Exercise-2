@@ -1,15 +1,8 @@
 $(document).ready(function(){
+  
+  $("#mypage-header-content").addClass("header-shrink");
 
-    $("#mypage-header-nav").addClass("header-shrink");
-    
-    // $(".mypage-header-nav").hover(function(){
-    //     $(this).stop(true).animate({height: "100px"});   
-    // },
-    // function(){
-    //     $(this).stop(true).animate({height: "10px"});
-    // })
-
-  $("#mypage-header-nav").hover(function(){
+  $("#mypage-header-content").hover(function(){
     $(this).toggleClass("header-shrink header-expand");
   })
 
@@ -26,5 +19,5 @@ $(document).ready(function(){
   $("#mypage-footer").on("mouseleave", function(){
     $(".mypage-footer-content").stop(true).slideUp(1000);
   })
-  
+
 })

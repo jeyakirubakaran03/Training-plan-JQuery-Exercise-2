@@ -9,7 +9,7 @@ $(document).ready(function(){
     // $(".section-content, .section-heading, .project-title, .project-tech, .project-tech-name, .js-container, .mypage-footer-a, .js-heading").addClass("text-color");
     
     $(".all-blocks").addClass("bg-color table-border-color text-color");
-    $("input").removeClass("js-input-field-border");
+    $("input").removeClass("input-border");
 
     $(".submit-button").hover(function(){
         $(this).toggleClass("button-color");

@@ -32,7 +32,7 @@
     
 }
 
-.mypage-header-nav{
+.mypage-header-content{
     background-color: #D98324;
     border: 3px solid #4B2E05;
     display: flex;
@@ -336,7 +336,7 @@ input{
     width: 220px;
     
 }
-.js-input-field-border{
+.input-border{
     border: 2px solid black;
 }
 
@@ -411,14 +411,6 @@ input::placeholder{
 
 .header-expand{
     height: 100px;
-    transition: height 4s ease;
-}
-
-.shrink-in-transition{
-    transition: height 2s ease;
-}
-
-.shrink-out-transition{
     transition: height 4s ease;
 }
 
